@@ -1,1 +1,1 @@
-# mac-os-opencore-asus-k501lx_lb
+OpenCore (0.6.0) EFI folder for ASUS K501LX (LB)
