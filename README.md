@@ -3,6 +3,41 @@
 
 ![Screenshot](https://github.com/IFierta/mac-os-opencore-asus-k501lx_lb/blob/master/Images/Catalina.jpg)
 
+## Current Status
+
+**Working:**
+
+- Sleep
+  
+- Hibernate
+  
+- WI-FI, Bluetooth ( Replaced to Broadcom)
+  
+- USB Ports (2.0, 3.0)
+  
+- Brightness
+  
+- The touchpad supports all the gestures of the magic trackpad (work only when using VoodooPS2.kext)
+  
+- Microphone
+  
+- FaceTime (Before starting facetime, first run the photobooth program so that the camera can initialize.)
+  
+- Keyboard backlight works when using ApplePS2SmartTouchPad.kext
+  
+
+**Not tested:**
+
+- USB SD Card Reader
+  
+- Ethernet
+  
+
+**Not working:**
+
+- Discrete graphic card is not working, since macOS doesn't support Optimus technology
+- Keyboard backlight not working when using VoodooPS2.kext
+
 **Preinstallation**
 
 **1. Bios settings**
