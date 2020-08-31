@@ -38,7 +38,7 @@
 - Discrete graphic card is not working, since macOS doesn't support Optimus technology
 - Keyboard backlight not working when using VoodooPS2.kext
 
-**Preinstallation**
+## Preinstallation
 
 **1. Bios settings**
 
@@ -65,6 +65,6 @@
 - Reboot your computer and install.
 - P.S: If for some reason you are unable to download the installation image from the Mac App Store, use BDU (Download BDU [here,](https://applelife.ru/threads/bdu-macos-i-clover-iz-windows-izgotovlenie-zagruzochnoj-flehshki.37189/) russian forum, use google translate), with this utility you can create a USB recovery image to boot and install Mac OS from recovery. After installing the macOS, boot into Windows, mount the ESP section and copy the EFI folder from my repository.
 
-**Postinstallation**
+## Postinstallation
 
 After you have successfully booted into the mac os, mount the ESP partition of your hard drive and copy the EFI folder from my repository there.
