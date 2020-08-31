@@ -21,7 +21,7 @@
   
 - Microphone
   
-- FaceTime (Before starting facetime, first run the photobooth program so that the camera can initialize.)
+- FaceTime (Before starting FaceTime, first run the Photo Booth program so that the camera can initialize.)
   
 - Keyboard backlight works when using ApplePS2SmartTouchPad.kext
   
