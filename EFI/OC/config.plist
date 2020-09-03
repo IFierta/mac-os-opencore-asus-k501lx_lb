@@ -1263,7 +1263,7 @@
 	<dict>
 		<key>BlessOverride</key>
 		<array>
-			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+			<string></string>
 		</array>
 		<key>Boot</key>
 		<dict>
