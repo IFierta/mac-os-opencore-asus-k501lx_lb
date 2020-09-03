@@ -1,0 +1,1 @@
+Hotpach to correctly display the charging and discharging status of the battery. If necessary.

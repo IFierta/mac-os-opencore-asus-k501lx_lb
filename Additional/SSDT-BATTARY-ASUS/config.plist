@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACPI</key>
+	<dict>
+		<key>Add</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BATT-ASUS.aml</string>
+			</dict>
+		</array>
+		<key>Patch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>TACH(1,S) to TACZ(1,S)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				VEFDSAk=
+				</data>
+				<key>Replace</key>
+				<data>
+				VEFDWgk=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>BIFA(0,N) to BIFZ(0,N)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				QklGQQA=
+				</data>
+				<key>Replace</key>
+				<data>
+				QklGWgA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBR(3,S) to SMRZ(3,S)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				U01CUgs=
+				</data>
+				<key>Replace</key>
+				<data>
+				U01SWgs=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBW(5,S) to SMWZ(5,S)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				U01CVw0=
+				</data>
+				<key>Replace</key>
+				<data>
+				U01XWg0=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ECSB(7,N) to ECSZ(7,N)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				RUNTQgc=
+				</data>
+				<key>Replace</key>
+				<data>
+				RUNTWgc=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_BIX(0,N) to ZBIX(0,N)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				X0JJWAA=
+				</data>
+				<key>Replace</key>
+				<data>
+				WkJJWAA=
+				</data>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

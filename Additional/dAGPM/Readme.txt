@@ -1,0 +1,1 @@
+This kext lowers the GPU frequency to 300Mhz
