@@ -1,4 +1,4 @@
-## OpenCore (0.6.0) EFI folder for ASUS K501LX (LB)
+## OpenCore EFI folder for ASUS K501LX (LB)
 
 
 ![Screenshot](https://github.com/IFierta/mac-os-opencore-asus-k501lx_lb/blob/master/Images/Catalina.jpg)
