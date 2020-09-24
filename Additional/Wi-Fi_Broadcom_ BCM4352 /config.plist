@@ -87,7 +87,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>LegacyBCM943225HMB.kext</string>
+				<string>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcmNIC_Injector.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
