@@ -19,86 +19,138 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>TACH(1,S) to TACZ(1,S)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				VEFDSAk=
-				</data>
-				<key>Replace</key>
-				<data>
-				VEFDWgk=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BIFA(0,N) to BIFZ(0,N)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				QklGQQA=
-				</data>
-				<key>Replace</key>
-				<data>
-				QklGWgA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SMBR(3,S) to SMRZ(3,S)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				U01CUgs=
-				</data>
-				<key>Replace</key>
-				<data>
-				U01SWgs=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SMBW(5,S) to SMWZ(5,S)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				U01CVw0=
-				</data>
-				<key>Replace</key>
-				<data>
-				U01XWg0=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>ECSB(7,N) to ECSZ(7,N)</string>
+				<key>Count</key>
+				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
 				RUNTQgc=
 				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				</data>
 				<key>Replace</key>
 				<data>
 				RUNTWgc=
 				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_BIX(0,N) to ZBIX(0,N)</string>
+				<string>SMBW(5,S) to SMWZ(5,S)</string>
+				<key>Count</key>
+				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				X0JJWAA=
+				U01CVw0=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
 				</data>
 				<key>Replace</key>
 				<data>
-				WkJJWAA=
+				U01XWg0=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBR(3,S) to SMRZ(3,S)</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				U01CUgs=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				</data>
+				<key>Replace</key>
+				<data>
+				U01SWgs=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>BIFA(0,N) to BIFZ(0,N)</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				QklGQQA=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				</data>
+				<key>Replace</key>
+				<data>
+				QklGWgA=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
 				</data>
 			</dict>
 		</array>
