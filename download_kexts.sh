@@ -72,7 +72,7 @@ download_github "Mieze/RTL8111_driver_for_OS_X/releases" "RealtekRTL8111" "Mieze
 download_github "acidanthera/Lilu/releases" "RELEASE" "acidanthera-Lilu.zip"
 download_github "acidanthera/AppleALC/releases" "RELEASE" "acidanthera-AppleALC.zip"
 download_github "acidanthera/VirtualSMC/releases" "RELEASE" "acidanthera-VirtualSMC.zip"
-download_github "BAndysc/VoodooPS2/releases" "RELEASE" "BAndysc-VoodooPS2.zip"
+download_github "acidanthera/VoodooPS2/releases" "RELEASE" "acidanthera-VoodooPS2Controller.zip"
 download_github "acidanthera/WhateverGreen/releases" "RELEASE" "acidanthera-WhateverGreen.zip"
 download_github "hieplpvip/AsusSMC/releases" "RELEASE" "hieplpvip-AsusSMC.zip"
 download_github "acidanthera/HibernationFixup/releases" "RELEASE" "acidanthera-HibernationFixup.zip"
