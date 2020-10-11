@@ -1,8 +1,6 @@
 ## ASUS K501LX (LB) Hackintosh
 
 
-## Current Status
-
 **Working:**
 
 - Sleep
