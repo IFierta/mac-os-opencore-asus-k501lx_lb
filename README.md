@@ -1,4 +1,4 @@
-## ASUS K501LX (LB) Hackintosh
+## OpenCore for ASUS K501LX (LB) 
 
 
 **Working:**
