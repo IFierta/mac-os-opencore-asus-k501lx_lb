@@ -15,8 +15,6 @@
   
 - Keyboard backlight
   
-- The touchpad supports all the gestures of the magic trackpad (work only when using VoodooPS2.kext)
-
 - Mini Jack 3.5mm (For correct working, you need to install codeccommander.kext in / L / E )
   
 - Microphone
