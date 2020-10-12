@@ -10,8 +10,10 @@
 - WI-FI, Bluetooth ( Replaced to Broadcom)
   
 - USB Ports (2.0, 3.0)
+
+- Airplane mode (Fn+f2) (For this mode to work, you need to install AsusSMCDaemon from [hieplpvip/AsusSMC](https://github.com/hieplpvip/AsusSMC))
   
-- Brightness
+- Keyboard backlight
   
 - The touchpad supports all the gestures of the magic trackpad (work only when using VoodooPS2.kext)
 
@@ -19,10 +21,7 @@
   
 - Microphone
   
-- FaceTime (Before starting FaceTime, first run the Photo Booth program so that the camera can initialize.)
-  
-- Keyboard backlight works when using ApplePS2SmartTouchPad.kext
-  
+- FaceTime (Before starting FaceTime, first run the Photo Booth program so that the camera can initialize.  
 
 **Not tested:**
 
@@ -34,7 +33,6 @@
 **Not working:**
 
 - Discrete graphic card is not working, since macOS doesn't support Optimus technology
-- Keyboard backlight not working when using VoodooPS2.kext
 
 **Bios settings**
 
