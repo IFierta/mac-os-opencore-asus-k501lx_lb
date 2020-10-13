@@ -19,7 +19,7 @@
   
 - Microphone
   
-- FaceTime (Before starting FaceTime, first run the Photo Booth program so that the camera can initialize.  
+- FaceTime (Before starting FaceTime, first run the Photo Booth program so that the camera can initialize.)  
 
 **Not tested:**
 
