@@ -36,4 +36,3 @@
 
 - Browse into Advanced -> Graphics Configuration section.
 - Change DVMT Pre-Allocated to be 64MB or 128MB.
-- CSM Enable (do not disable)
