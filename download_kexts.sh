@@ -5,20 +5,6 @@
 curl_options="--retry 5 --location --progress-bar"
 curl_options_silent="--retry 5 --location --silent"
 
-# download typical release from RehabMan bitbucket downloads
-function download_RHM()
-# $1 is subdir on rehabman bitbucket
-# $2 is prefix of zip file name
-{
-    echo "downloading $2:"
-    curl $curl_options_silent --output /tmp/com.hieplpvip.download.txt https://bitbucket.org/RehabMan/$1/downloads/
-    local url=https://bitbucket.org`grep -o -m 1 "/RehabMan/$1/downloads/$2.*\.zip" /tmp/com.hieplpvip.download.txt|perl -ne 'print $1 if /(.*)\"/'`
-    echo $url
-    curl $curl_options --output "$2.zip" "$url"
-    rm /tmp/com.hieplpvip.download.txt
-    echo
-}
-
 # download latest release from github
 function download_github()
 # $1 is sub URL of release page
@@ -61,7 +47,6 @@ echo
 if [ ! -d ./Desktop/download_kexts ]; then mkdir ./Desktop/download_kexts; fi
 cd ./Desktop/download_kexts
 rm -rf ./zips
-rm -rf ./le_kexts
 rm -rf ./opencore_kexts
 
 
@@ -77,7 +62,6 @@ download_github "acidanthera/WhateverGreen/releases" "RELEASE" "acidanthera-What
 download_github "hieplpvip/AsusSMC/releases" "RELEASE" "hieplpvip-AsusSMC.zip"
 download_github "acidanthera/HibernationFixup/releases" "RELEASE" "acidanthera-HibernationFixup.zip"
 download_github "acidanthera/CPUFriend/releases" "RELEASE" "acidanthera-CPUFriend.zip"
-download_RHM os-x-eapd-codec-commander RehabMan-CodecCommander
 
 
 
@@ -89,7 +73,6 @@ fi
 cd ..
 
 
-LEKEXTS="CodecCommander"
 OPENCOREKEXTS="AppleALC|AsusSMC|AirportBrcmFixup|BrcmPatchRAM3|BrcmFirmwareData|BrcmBluetoothInjector|WhateverGreen|Lilu|VirtualSMC|SMCBatteryManager|SMCProcessor|VoodooPS2Controller|RealtekRTL8111|CPUFriend|HibernationFixup"
 
 function check_directory
@@ -111,10 +94,7 @@ function unzip_kext
     if [ $? -ne 0 ]; then
         for kext in $out/Release/*.kext; do
             kextname="`basename $kext`"
-            
-            if [[ "`echo $kextname | grep -E $LEKEXTS`" != "" ]]; then
-                cp -R $kext ../le_kexts
-            fi
+        
             if [[ "`echo $kextname | grep -E $OPENCOREKEXTS`" != "" ]]; then
                 cp -R $kext ../opencore_kexts
             fi
@@ -125,9 +105,6 @@ function unzip_kext
         for kext in $out/*.kext; do
             kextname="`basename $kext`"
             
-            if [[ "`echo $kextname | grep -E $LEKEXTS`" != "" ]]; then
-                cp -R $kext ../le_kexts
-            fi
             if [[ "`echo $kextname | grep -E $OPENCOREKEXTS`" != "" ]]; then
                 cp -R $kext ../opencore_kexts
             fi
@@ -138,9 +115,6 @@ function unzip_kext
         for kext in $out/Kexts/*.kext; do
             kextname="`basename $kext`"
             
-            if [[ "`echo $kextname | grep -E $LEKEXTS`" != "" ]]; then
-                cp -R $kext ../le_kexts
-            fi
             if [[ "`echo $kextname | grep -E $OPENCOREKEXTS`" != "" ]]; then
                 cp -R $kext ../opencore_kexts
             fi
@@ -151,9 +125,6 @@ function unzip_kext
         for kext in $out/RealtekRTL8111-V2.3.0/Release/*.kext; do
             kextname="`basename $kext`"
             
-            if [[ "`echo $kextname | grep -E $LEKEXTS`" != "" ]]; then
-                cp -R $kext ../le_kexts
-            fi
             if [[ "`echo $kextname | grep -E $OPENCOREKEXTS`" != "" ]]; then
                 cp -R $kext ../opencore_kexts
             fi
@@ -162,7 +133,6 @@ function unzip_kext
     
 }
 
-mkdir ./le_kexts
 mkdir ./opencore_kexts
 
 check_directory ./zips/*.zip
