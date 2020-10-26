@@ -15,7 +15,7 @@
   
 - Keyboard backlight
   
-- Mini Jack 3.5mm (For correct working, you need to install codeccommander.kext in / L / E )
+- Mini Jack 3.5mm
   
 - Microphone
   
