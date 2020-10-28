@@ -15,7 +15,7 @@
   
 - Keyboard backlight
   
-- Mini Jack 3.5mm
+- Headphone
   
 - Microphone
   
@@ -26,7 +26,8 @@
 - USB SD Card Reader
   
 - Ethernet
-  
+
+- HDMI
 
 **Not working:**
 
