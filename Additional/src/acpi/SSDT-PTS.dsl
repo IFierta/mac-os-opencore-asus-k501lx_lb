@@ -24,7 +24,14 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "_PTS", 0x00000000)
 
     Method (_PTS, 1, NotSerialized)  // _PTS: Prepare To Sleep
     {
-        If (LNotEqual (Arg0, 0x05))
+        If (_OSI ("Darwin"))
+        {
+            If ((Arg0 != 0x05))
+            {
+                ZPTS (Arg0)
+            }
+        }
+        Else
         {
             ZPTS (Arg0)
         }
