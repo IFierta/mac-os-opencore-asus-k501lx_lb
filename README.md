@@ -15,7 +15,7 @@
   
 - Keyboard backlight
   
-- Headphone (For correct working, you need to install codeccommander.kext in / L / E. If you don't want to use codeccommander.kext change layout id to <20000000> )
+- Headphone (Use AlcPlugFix for the headphones to work correctly.)
   
 - Microphone
   
