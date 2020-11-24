@@ -13,4 +13,4 @@ Every software connector must be assigned a unique BusID, but only certain BusID
 
 Read the guide:
 
-https://dortania.github.io/OpenCore-Post-Install/gpu-patching/intel-patching/busid.html#parsing-the-framebuffer
+https://dortania.github.io/OpenCore-Post-Install/gpu-patching/intel-patching/busid.html
