@@ -525,6 +525,33 @@
 	</dict>
 	<key>Booter</key>
 	<dict>
+		<key>Patch</key>
+		<array>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Comment</key>
+				<string>macOS to hacOS</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>bWFjT1M=</data>
+				<key>Identifier</key>
+				<string>Apple</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>Replace</key>
+				<data>aGFjT1M=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 		<key>MmioWhitelist</key>
 		<array>
 			<dict>
@@ -546,6 +573,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>AllowRelocationBlock</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -586,11 +615,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>AwAAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -611,6 +635,11 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-portcount</key>
 				<data>AgAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>AwAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1182,7 +1211,7 @@
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExtendBTFeatureFlags</key>
-			<false/>
+			<true/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>ForceSecureBootScheme</key>
@@ -1273,6 +1302,8 @@
 				<string>CustomOS</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 		<key>Security</key>
@@ -1285,6 +1316,8 @@
 			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
 			<key>DmgLoading</key>
@@ -1314,6 +1347,24 @@
 				<key>Auxiliary</key>
 				<false/>
 				<key>Comment</key>
+				<string>CFG Unlock</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Name</key>
+				<string>CFG Unlock</string>
+				<key>Path</key>
+				<string>CFGLock.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
@@ -1321,6 +1372,10 @@
 				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1335,6 +1390,10 @@
 				<string>memcheck</string>
 				<key>Path</key>
 				<string>memcheck/memcheck.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1349,6 +1408,10 @@
 				<string>Shutdown</string>
 				<key>Path</key>
 				<string>ResetSystem.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -1497,9 +1560,9 @@
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<false/>
+			<string>Auto</string>
 			<key>VolumeAmplifier</key>
-			<integer>0</integer>
+			<integer>143</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -1508,6 +1571,7 @@
 			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenCanopy.efi</string>
+			<string>#AudioDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
