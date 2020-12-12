@@ -15,7 +15,7 @@
   
 - Keyboard backlight
   
-- Headphone (Use AlcPlugFix for the headphones to work correctly.)
+- Headphones (Use AlcPlugFix for the headphones to work correctly.)
   
 - Microphone
   
