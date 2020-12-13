@@ -1,4 +1,10 @@
+<img align="right" src="https://github.com/acidanthera/OpenCorePkg/raw/master/Docs/Logos/OpenCore_with_text_Small.png" alt="OpenCore 0.6.4" width="225">
+
+
 ## OpenCore for ASUS K501LX (LB) 
+
+![OpenCore](https://img.shields.io/badge/OpenCore-v0.6.4-brightgreen)
+![MacOS](https://img.shields.io/badge/Mac%20OS-v11.0.1%20(20B29)-brightgreen)
 
 
 **Working:**
