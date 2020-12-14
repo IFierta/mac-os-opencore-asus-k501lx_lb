@@ -110,6 +110,14 @@
 				<key>Path</key>
 				<string>SSDT-ATK.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PS2.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -640,6 +648,8 @@
 			<dict>
 				<key>layout-id</key>
 				<data>AwAAAA==</data>
+				<key>alc-verbs</key>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>

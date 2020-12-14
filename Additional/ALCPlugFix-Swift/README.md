@@ -1,0 +1,1 @@
+An alternative way to fix bad sound from headphones. Read here: https://github.com/black-dragon74/ALCPlugFix-Swift
