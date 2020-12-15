@@ -1,7 +1,7 @@
 ## OpenCore for ASUS K501LX (LB) 
 
 ![OpenCore](https://img.shields.io/badge/OpenCore-v0.6.4-brightgreen)
-![MacOS](https://img.shields.io/badge/Mac%20OS-v11.1%20-brightgreen)
+![MacOS](https://img.shields.io/badge/macOS-BigSur-brightgreen)
 
 
 **Working:**
