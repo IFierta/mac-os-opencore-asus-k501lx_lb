@@ -1,0 +1,1 @@
+Copy color profiles in /Library/ColorSync/Profiles/Displays
