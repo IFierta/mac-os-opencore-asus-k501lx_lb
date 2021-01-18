@@ -21,13 +21,13 @@
   
 - FaceTime (Before starting FaceTime, first run the Photo Booth program so that the camera can initialize.)  
 
+- HDMI 
+
+- Ethernet
+
 **Not tested:**
 
 - USB SD Card Reader
-  
-- Ethernet
-
-- HDMI 
 
 **Not working:**
 
